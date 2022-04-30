@@ -1,0 +1,49 @@
+Aim 1: Create a relational database schema for a Minor-Project, described by the following relations
+and Insert tuples.
+STUDENT (Rollno, Name, Sem, Degree, Contact no, Guide_No)
+GUIDE (Guide_name, Guide_No, Guide_reserach_domain, Contact_No, Email_Id)
+PROJECT (Project_No, Project_title, Project_Area, Start_dt, Guide_No)
+Specify the following queries in SQL on the database schema Minor_Project.
+1) Change the data type of attribute Rollo (Student Table), from Number (10) to Varchar2 (10).
+2) Add a Check constraint on Gender attribute(Student Table) such that this attribute accept only
+(“M”,”F”,
+“m”,”f”) values.
+3) Add a constraint on Degree (Student table), such that no null values be inserted.
+4) Find the list of guide, who are guiding more than two student groups.
+5) Find the list of project no, project name &amp; name of guide, in domain of DataBase.
+6) Show all different project area with total no of project associated with it.
+7) Print the student detail along with their Guide details.
+Aim 1: Create a relational database schema for a University, described by the following relations and
+Insert tuples.
+CLASSROOM (Building, Room Number, capacity)
+DEPARTMENT (Dept name, building, budget)
+COURSE (Course id, title, dept name, credits)
+INSTRUCTER (I_ID, name, dept name, salary)
+SECTION (Course id, secid, semester, year, building, room number, time slot id)
+Specify the following queries in SQL on the database schema University.
+1) Increment Salary of each instructor by 10%, who is working in Department CSE.
+2) Update the Room no for Course scheduled on 12.30-01.25 from RN-204 to RN-102.
+3) Retrieve the names of all instructors, along with their department names.
+4) Find the names of all instructors in the Computer Science department who have salary greater
+than
+Rs.70,000.
+5) Show all the subjects which have assigned maximum credits.
+6) Find the instructor name that is getting third highest salary.
+Aim 1: Create a relational database schema for a Company, described by the following relations and
+Insert tuples.
+Employee (F_name, L_name, Emp_id, Bdate, Address, Gender, Salary,DNo)
+Department (D_name, Dno, D_Mgr_id, Mgr_start_date )
+Dept_Location(D_no, D_location )
+Project (P_name, P_number, P_location, D_no )
+Works_on (Emp_id, P_no, Hours )
+Dependent (Emp_id, Dependent_name, Gender, Bdate, Relationship)
+Specify the following queries in SQL on the database Company
+1) Company decided to give a raise on salaries of every employee,working on the “ProductX‟ project
+by 10
+percent.
+2) Find the names and address of all employees who work in same department.
+3) Retrieve the name &amp; employee id of employees, whose salary is between Rs.30,000 and
+Rs.40,000.
+4) Find the names of all employees who are directly supervised by “Franklin”
+5) List the name and address of all employees who work for the “Research” department.
+6) List the names of employees who works on all project controlled by department number 5.
