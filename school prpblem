@@ -1,1 +1,45 @@
-
+create table student(
+    rollno number(10) ,
+    name varchar(20),
+    sem int,
+    degree varchar(5)/*3*/not null,
+    contact_no int,
+    guide_no int,
+    gender char(1)/*2*/ CHECK (gender='m' or gender='f' or gender='M' or gender='F')
+);
+insert into student values(145,'ankit',3,'CSE',15478965,124,'M');
+insert into student values(145,'ankit',3,'CSE',15478965,127,'M');
+insert into student values(145,'ankit',3,'CSE',15478965,122,'M');
+insert into student values(145,'aman',3,'CSE',15478965,127,'M');
+-- select * from student;
+create table guide(
+    guide_name varchar(20),
+    guide_no int,
+    guide_research_domain varchar(20),
+    contact_no int,
+    email_id varchar(20)
+);
+insert into guide values('Powder',122,'cs-official',9874561,'powder@srm');
+insert into guide values('Pallav',124,'cs-unofficial',9874561,'per@srm');
+insert into guide values('Kartik',127,'ec-official',9874561,'pr@srm');
+create table project(
+    project_no int AUTO_INCREMENT,
+    project_title varchar(20),
+    project_area varchar(20),
+    start_dt date,
+    guide_no int
+);
+create table group_(
+    group_code int,
+    rollno number(10),
+    foreign key(rollno) references student(rollno) on delete set Null
+);
+create table project_group(
+    group_code int,
+    project_no int,
+    no_of_student int
+);
+/*----------------------1--------------------------*/
+-- ALTER TABLE student alter COLUMN rollno varchar(20);
+/*------------------------4--------------------------*/
+-- select guide_name from guide where gu
